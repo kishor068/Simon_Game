@@ -1,53 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
+  background-color: rgb(40, 40, 91);
+}
+button {
+  width: 200px;
+  height: 200px;
+  /* margin: auto; */
+  margin: 30px 10px 30px 10px;
+  border-radius: 20px;
+  border: 5px solid black;
+}
+.heads {
   text-align: center;
-  background-color: #011F3F;
+  margin-top: 4rem;
+  color: white;
+  font-size: 50px;
 }
-
-#level-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin:  5%;
-  color: #FEF2BF;
-}
-
-.container {
-  display: block;
-  width: 50%;
-  margin: auto;
-
+.btns1,
+.btns2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  /* width: fit-content; */
 }
 
 .btn {
-  margin: 25px;
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 10px solid black;
-  border-radius: 20%;
+  display: flex;
+  flex-direction: column;
 }
-
-.game-over {
-  background-color: red;
-  opacity: 0.8;
-}
-
-.red {
-  background-color: red;
-}
-
-.green {
+/* .btns1
+{
+    margin-bottom: 20px;
+} */
+.b1 {
   background-color: green;
 }
-
-.blue {
+.b2 {
+  background-color: red;
+}
+.b4 {
   background-color: blue;
 }
-
-.yellow {
+.b3 {
   background-color: yellow;
 }
 
-.pressed {
-  box-shadow: 0 0 20px white;
+.click_Anim
+{
+  border-color: white;
+  box-shadow: 5px 5px 5px white;
+  opacity: 0;
+}
+
+.pressed
+{
   background-color: grey;
+  box-shadow:  8px 8px 8px rgb(203, 215, 203);
+}
+
+.wrong
+{
+  background-color: red;
 }
